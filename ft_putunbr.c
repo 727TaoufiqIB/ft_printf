@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 20:36:44 by tibarike          #+#    #+#             */
-/*   Updated: 2024/11/21 20:36:47 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:38:55 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ static int	len_nb(unsigned int nb)
 
 int	ft_putunbr(unsigned int n)
 {
-	char    num[10];
-	int     i;
+	char	num[10];
+	int		i;
 	int		len;
 
 	len = len_nb(n);

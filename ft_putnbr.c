@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 20:36:29 by tibarike          #+#    #+#             */
-/*   Updated: 2024/11/21 20:36:31 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:37:04 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,30 +32,29 @@ static int	len_nb(long nb)
 	return (len);
 }
 
-
 int	ft_putnbr(int n)
 {
-	char    num[12];
-	long    nb;
-	int     i;
+	char	num[12];
+	long	nb;
+	int		i;
 	int		len;
 
 	nb = n;
 	len = len_nb(nb);
 	i = 0;
 	if (nb == 0)
-	    return (ft_putchar('0'), 1); 
+		return (ft_putchar('0'), 1);
 	if (nb < 0)
 	{
-	        ft_putchar('-');
-	        nb = -nb;
+		ft_putchar('-');
+		nb = -nb;
 	}
 	while (nb > 0)
 	{
-	        num[i++] = (nb % 10) + '0';
-	        nb = nb / 10;
+		num[i++] = (nb % 10) + '0';
+		nb = nb / 10;
 	}
 	while (--i >= 0)
-	        ft_putchar(num[i]);
+		ft_putchar(num[i]);
 	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:25:08 by tibarike          #+#    #+#             */
-/*   Updated: 2024/11/21 20:35:01 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:34:59 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-#include <libc.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);

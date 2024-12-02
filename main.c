@@ -2,9 +2,10 @@
 
 int	main(void)
 {
+	unsigned long n = -1;
 	ft_printf("Character: %c\n", 'A');
 	ft_printf("String: %s\n", "Hello, world!");
-	ft_printf("Pointer: %p\n", &main);
+	ft_printf("Pointer: %p\n", &n);
 	ft_printf("Decimal: %d\n", -12345);
 	ft_printf("Integer: %i\n", 12345);
 	ft_printf("Unsigned: %u\n", 4294967295);

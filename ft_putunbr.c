@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 20:36:44 by tibarike          #+#    #+#             */
-/*   Updated: 2024/11/23 15:38:55 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/12/02 14:09:43 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,6 @@ static int	len_nb(unsigned int nb)
 	int		len;
 
 	len = 0;
-	if (nb < 0)
-	{
-		nb = nb * -1;
-		len++;
-	}
 	if (nb == 0)
 		return (1);
 	while (nb > 0)
@@ -43,7 +38,7 @@ int	ft_putunbr(unsigned int n)
 	if (n == 0)
 	{
 		ft_putchar('0');
-		return (0);
+		return (1);
 	}
 	while (n > 0)
 	{

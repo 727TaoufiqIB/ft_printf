@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_ux.c                                     :+:      :+:    :+:   */
+/*   ft_putadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:21:32 by tibarike          #+#    #+#             */
-/*   Updated: 2024/12/02 14:24:21 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/12/02 14:25:42 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static void	ft_strcpy(char *dest, char *src)
 	dest[j] = '\0';
 }
 
-int	ft_putnbr_ux(unsigned int num)
+int	ft_putadd(unsigned long num)
 {
 	char			converted[16];
 	int				i;
@@ -34,7 +34,7 @@ int	ft_putnbr_ux(unsigned int num)
 
 	i = 0;
 	len = 0;
-	ft_strcpy(base, "0123456789ABCDEF");
+	ft_strcpy(base, "0123456789abcdef");
 	if (num == 0)
 	{
 		ft_putchar('0');

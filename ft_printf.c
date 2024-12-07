@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 19:51:42 by tibarike          #+#    #+#             */
-/*   Updated: 2024/12/02 15:49:31 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/12/04 16:09:45 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ int	ft_printf(const char *format, ...)
 
 	va_start(args, format);
 	counter = 0;
+	if (write(1, format, 0) == -1)
+		return (-1);
 	while (*format)
 	{
 		if (*format == '%')
@@ -55,7 +57,7 @@ int	ft_printf(const char *format, ...)
 			format++;
 			if (*format == '\0')
 				break ;
-			counter = conversion(format, args);
+			counter += conversion(format, args);
 		}
 		else
 			counter += ft_putchar(*format);

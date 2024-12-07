@@ -6,7 +6,7 @@
 /*   By: tibarike <tibarike@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:21:32 by tibarike          #+#    #+#             */
-/*   Updated: 2024/12/02 14:24:21 by tibarike         ###   ########.fr       */
+/*   Updated: 2024/12/02 16:04:58 by tibarike         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ static void	ft_strcpy(char *dest, char *src)
 
 int	ft_putnbr_ux(unsigned int num)
 {
-	char			converted[16];
-	int				i;
-	int				len;
-	char			base[17];
+	char	converted[16];
+	int		i;
+	int		len;
+	char	base[17];
 
 	i = 0;
 	len = 0;
